@@ -1,0 +1,123 @@
+/* ------- MAIN WRAPPER -------- */
+.list-product {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ------- HEADING -------- */
+.list-product h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* -------- HEADER FORMAT -------- */
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 12px 15px;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+}
+
+/* -------- LIST ITEMS -------- */
+.listproduct-format {
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+.listproduct-format:hover {
+  background: #f7f7f7;
+}
+
+/* -------- PRODUCT IMAGE -------- */
+.listproduct-product-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* -------- DELETE ICON -------- */
+.listproduct-remove-icon {
+  width: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.listproduct-remove-icon:hover {
+  transform: scale(1.2);
+}
+
+/* -------- SEPARATOR -------- */
+.listproduct-allproducts hr {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  margin: 0 0 8px 0;
+}
+
+/* ========= RESPONSIVE MEDIA QUERIES ========= */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .listproduct-format-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .listproduct-remove-icon {
+    justify-self: end;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 700px) {
+
+  .listproduct-format-main {
+    display: none; /* hide table header */
+  }
+
+  .listproduct-format {
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background: white;
+  }
+
+  .listproduct-format img {
+    grid-column: span 2;
+  }
+
+  .listproduct-remove-icon {
+    justify-self: end;
+  }
+
+  .listproduct-format p:nth-child(2)::before {
+    content: "Title: ";
+    font-weight: bold;
+  }
+
+  .listproduct-format p:nth-child(3)::before {
+    content: "Old Price: ";
+    font-weight: bold;
+  }
+
+  .listproduct-format p:nth-child(4)::before {
+    content: "New Price: ";
+    font-weight: bold;
+  }
+
+  .listproduct-format p:nth-child(5)::before {
+    content: "Category: ";
+    font-weight: bold;
+  }
+}

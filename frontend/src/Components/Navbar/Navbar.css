@@ -1,0 +1,148 @@
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img{
+  width: 45px;
+}
+
+.nav-logo p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #171717;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu li{
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-menu li a{
+  color: #171717;
+  font-weight: 500;
+}
+
+.nav-menu hr{
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: #ff4141;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.nav-login-cart{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-login-cart button{
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #7a7a7a;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-login-cart img{
+  width: 30px;
+}
+.nav-cart-count{
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggle{
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+@media (max-width: 1024px){
+  .navbar{
+    padding: 16px 20px;
+  }
+
+  .nav-menu{
+    gap: 20px;
+  }
+}
+@media (max-width: 768px){
+  .nav-toggle{
+    display: block;
+  }
+
+  .nav-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-menu.active{
+    display: flex;
+  }
+
+  .nav-menu li{
+    font-size: 18px;
+  }
+
+  .nav-login-cart{
+    gap: 12px;
+  }
+
+  .nav-login-cart button{
+    width: 75px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px){
+  .nav-logo p{
+    font-size: 16px;
+  }
+
+  .nav-logo img{
+    width: 35px;
+  }
+}
+

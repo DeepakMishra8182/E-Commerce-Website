@@ -1,0 +1,220 @@
+
+.cartitems{
+  width: 100%;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+/* ===== Header Row ===== */
+.cartitems-format-main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+.cartitems-format{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.cartitems hr{
+  border: none;
+  height: 1px;
+  background: #e2e2e2;
+}
+
+/* ===== Product Image ===== */
+.carticon-product-icon{
+  width: 70px;
+}
+
+/* ===== Quantity ===== */
+.cartitems-quantity{
+  width: 45px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: default;
+}
+
+/* ===== Remove ===== */
+.cartitems-remove-icon{
+  width: 18px;
+  cursor: pointer;
+}
+
+/* ===== Bottom Section ===== */
+.cartitems-down{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+/* ===== Cart Total ===== */
+.cartitems-total{
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cartitems-total h1{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.cartitems-total-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.cartitems-total button{
+  width: 100%;
+  height: 45px;
+  background: #ff4141;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* ===== Promo Code ===== */
+.cartitems-promocode{
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cartitems-promocode p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.cartitems-promobox{
+  display: flex;
+  gap: 10px;
+}
+
+.cartitems-promobox input{
+  flex: 1;
+  height: 45px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cartitems-promobox button{
+  height: 45px;
+  padding: 0 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 1024px){
+  .cartitems{
+    padding: 30px;
+  }
+
+  .cartitems-down{
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px){
+  .cartitems-format-main{
+    display: none;
+  }
+  .cartitems-format{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    gap: 10px;
+  }
+
+  .carticon-product-icon{
+    width: 100px;
+    align-self: center;
+  }
+
+  /* Label + Value system */
+  .cartitems-format p,
+  .cartitems-format button{
+    font-size: 14px;
+  }
+
+  .cartitems-format p::before{
+    font-weight: 600;
+    color: #555;
+    margin-right: 5px;
+  }
+
+  .cartitems-format p:nth-child(2)::before{
+    content: "Title: ";
+  }
+  .cartitems-format p:nth-child(3)::before{
+    content: "Price: ₹";
+  }
+  .cartitems-format p:nth-child(5)::before{
+    content: "Total: ₹";
+  }
+
+  .cartitems-quantity::before{
+    content: "Qty: ";
+    font-weight: 600;
+    margin-right: 5px;
+  }
+
+
+  .cartitems-remove-icon{
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .cartitems-down{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px){
+  .cartitems-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    line-height: 1;
+    padding: 0;
+
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px){
+  .cartitems{
+    padding: 20px 15px;
+  }
+
+  .cartitems-total,
+  .cartitems-promocode{
+    padding: 20px;
+  }
+}

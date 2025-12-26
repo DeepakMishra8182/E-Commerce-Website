@@ -1,0 +1,68 @@
+/* ===== Navbar Wrapper ===== */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ===== Navbar Logo ===== */
+.nav-logo {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-logo:hover {
+  transform: scale(1.08);
+}
+
+/* ===== Navbar Profile Icon ===== */
+.nav-profile {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 40px; 
+}
+
+.nav-profile:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Responsive Navbar ===== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .nav-logo {
+    height: 40px;
+  }
+
+  .nav-profile {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-logo {
+    height: 35px;
+  }
+
+  .nav-profile {
+    height: 30px;
+  }
+}

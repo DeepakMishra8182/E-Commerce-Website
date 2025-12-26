@@ -1,0 +1,148 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo p{
+  color: #383838;
+  font-size: 46px;
+  font-weight: 700;
+}
+.footer-links{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #252525;
+  font-size: 20px;
+}
+.footer-links li{
+  cursor: pointer;
+}
+.footer-social-icon{
+  display: flex;
+  gap: 20px;
+}
+.footer-icons-container{
+  padding: 10px;
+  padding-bottom: 6px;
+  background-color: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.footer-copyright hr{
+width: 80%;
+border: none;
+border-radius:10px ;
+height:3px;
+background-color: #c7c7c7;
+}
+
+
+/* ===== Tablet (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .footer{
+    gap: 40px;
+  }
+
+  .footer-logo p{
+    font-size: 36px;
+  }
+
+  .footer-links{
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .footer-copyright{
+    font-size: 18px;
+  }
+}
+
+/* ===== Mobile (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .footer{
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .footer-logo{
+    gap: 15px;
+  }
+
+  .footer-logo p{
+    font-size: 28px;
+  }
+
+  .footer-links{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .footer-social-icon{
+    gap: 15px;
+  }
+
+  .footer-copyright{
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .footer-copyright hr{
+    width: 90%;
+  }
+}
+
+/* ===== Small Mobile (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .footer{
+    gap: 25px;
+  }
+
+  .footer-logo{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-logo p{
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .footer-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  .footer-social-icon{
+    gap: 12px;
+  }
+
+  .footer-icons-container{
+    padding: 8px;
+  }
+
+  .footer-copyright{
+    font-size: 14px;
+    text-align: center;
+  }
+}

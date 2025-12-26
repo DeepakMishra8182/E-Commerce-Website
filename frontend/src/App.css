@@ -1,0 +1,21 @@
+/* *{
+  padding:0;
+  margin:0;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+} */
+
+
+/* Prevent horizontal scroll globally */
+* {
+  box-sizing: border-box; /* Ensure padding/margin don’t expand width */
+   font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* THIS stops horizontal scroll */
+  width: 100%;
+}

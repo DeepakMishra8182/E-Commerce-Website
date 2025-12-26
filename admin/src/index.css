@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  font-family: "poppins";
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;   /* horizontal scrolling stop */
+}

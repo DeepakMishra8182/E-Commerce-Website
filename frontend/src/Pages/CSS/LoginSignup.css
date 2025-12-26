@@ -1,0 +1,105 @@
+/* ---------- MAIN PAGE WRAPPER --------- */
+.loginsignup {
+  width: 100%;
+  min-height: calc(100vh - 160px); /* space for navbar + footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  padding: 40px 0;
+}
+
+/* ---------- CONTAINER --------- */
+.loginsignup-container {
+  width: 400px;
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------- HEADING ---------- */
+.loginsignup-container h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* ---------- INPUT BOXES ---------- */
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.loginsignup-fields input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.loginsignup-fields input:focus {
+  border-color: #007bff;
+}
+
+/* ---------- BUTTON ---------- */
+.loginsignup-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background: #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.loginsignup-container button:hover {
+  background: #005dc0;
+}
+
+/* ---------- LOGIN LINK ---------- */
+.loginsignup-login {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.loginsignup-login span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ---------- TERMS CHECKBOX ---------- */
+.loginsignup-agree {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width: 450px) {
+  .loginsignup-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .loginsignup-container h1 {
+    font-size: 22px;
+  }
+
+  .loginsignup-container button {
+    font-size: 16px;
+  }
+}
